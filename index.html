@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preload" href="/assets/fonts/material-icons/MaterialIcons.woff2" as="font" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="dynamics.js"></script>
+
+
+    <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+    <title>Kolekce aukcí | Aukro.cz</title>
+
+</head>
+
+<body>
+
+    <!-- case -->
+    <div class="w-full h-[7811px] mx-auto my-0 sm:h-[4473px]">
+
+        <!-- header -->
+        <div class="w-full h-[124px] sm:h-[117.5px] float-left pb-[14px] border-b-2 shadow-sm">
+            <!-- center of header-->
+            <div class="w-[320px] min-h-[124px] sm:min-h[117.5px] sm:w-[1280px] sm:px-[16px] mx-auto">
+                <!-- MOBILE -->
+                <!-- first line-->
+                <div class="w-full h-[48px] px-[8px] float-left bg-white sm:hidden">
+                    <!-- logo -->
+                    <div class="w-[50px] h-[14.6px] mb-[14.7px] mt-[14.7px] float-left">
+                        <svg-icon id="logo" class="logo">
+                            <div><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 154.4 43.4" style="enable-background:new 0 0 154.4 43.4;" xml:space="preserve" class="c-svg-icon icn icn-svg" width="100%" height="100%">
+                            <g>
+                                <g>
+                                    <path fill="#fc5c05" d="M82.4,25.1c0,0,11.7-11.2,13.2-12.5c1.5-1.3,1.5-2.4,0.6-2.4c-0.9,0-5.8,0-6.3,0c-0.6,0-1.4,0.5-1.4,0.5
+                                        L74.8,24.6c0,0,0-23.9,0-24.6c0-0.6-0.5-1.6-1.1-1.6c-0.6,0-3.5,0-4.7,0c-1.2,0-1.2,1.2-1.2,1.2s0,39.7,0,40.9
+                                        c0,1.2,0.4,1.7,1.2,1.7c0.8,0,4.6,0,5.3,0c0.7,0,0.6-0.6,0.6-0.6v-10l2.5-2.3l11.4,11.8c0,0,0.9,1.1,1.5,1.1c0.9,0,4.7,0,6.6,0
+                                        c1.9,0,0.9-1.3,0.9-1.3L82.4,25.1z M61,10.1c-1.1,0-4,0-4.5,0c-0.5,0-1.2,0.2-1.2,1.2c0,1,0,16.9,0,18.7s-1.8,6.6-7.8,6.6
+                                        c-5.9,0-7.2-4.4-7.2-6.4c0-2.1,0-18.2,0-18.8c0-0.6-0.3-1.3-0.8-1.3c-0.6,0-5.2,0-5.7,0C33.4,10.1,33,11,33,11s0,16.6,0,19.1
+                                        c0,2.6,2,13.1,14.5,13.1c12.5,0,15.1-10.4,15.1-13.2c0-2.8,0-17.5,0-18.4C62.7,10.6,62.1,10.1,61,10.1z M21.3,10.1
+                                        c-7.1-3.3-16.7,2.2-16.7,2.2v5.7c0,0,0.7,0.6,1.7-0.3c1-0.9,4.1-2.7,8.4-2.7s6.1,1.3,6.7,3.4c0.6,2.1,0.3,2.9,0.3,2.9s-4,0-8.6,0
+                                        c-4.7,0-13,2.2-13,10.9c0,8.7,8,10,10.8,10c2.8,0,16.2,0,16.4,0c0.2,0,1.2,0.2,1.2-1.4c0-1.6,0-14.6,0-18.7
+                                        C28.5,18,28.4,13.5,21.3,10.1z M21.7,36.5c0,0-6.6,0-9.7,0S7.1,33.8,7.1,32c0-1.8,1.4-5.3,6-5.3s8.6,0,8.6,0V36.5z M137.6,9
+                                        c-9.3,0-16.8,7.7-16.8,17.2c0,9.5,7.5,17.2,16.8,17.2c9.3,0,16.8-7.7,16.8-17.2C154.4,16.7,146.9,9,137.6,9z M137.6,37.1
+                                        c-5,0-9-4.9-9-10.9c0-6,4-10.9,9-10.9c5,0,9,4.9,9,10.9C146.6,32.2,142.6,37.1,137.6,37.1z M114.6,9.1c-4.1,0.1-7.7,2.4-10.1,5.1
+                                        c-2.4,2.7-3,6.2-3,8.9s0.1,17.8,0.1,17.8s-0.3,1.4,0.9,1.4c1.2,0,4.3,0,5.2,0c0.9,0,0.9-0.7,0.9-1.5c0-0.8,0-16.3,0-19.5
+                                        c0-3.2,2.9-6.1,7.4-6.1c1.4,0,3.6,1.1,3.6,0.3c0-1,0-4.4,0-5.1C119.7,9.6,118.7,9,114.6,9.1z"></path>
+                                </g>
+                            </g>
+                            </svg></div>
+                            <!---->
+                            <!---->
+                            <!---->
+                        </svg-icon>
+                    </div>
+                    <!-- icon menu -->
+                    <div class="w-[24px] h-[24px] ml-[6.4px] mr-[6.4px] my-[12px] float-right">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#757575" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                        </svg>
+                    </div>
+
+                    <!-- icon shopping cart -->
+                    <div class="w-[24px] h-[24px] ml-[6.4px] mr-[6.4px] my-[12px] float-right">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#757575" d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
+                        </svg>
+                    </div>
+
+                    <!-- icon account -->
+                    <div class="w-[24px] h-[24px] ml-[6.4px] mr-[6.4px] my-[12px] float-right">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#757575" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- second line -->
+                <div class="w-full h-[48.3333px] px-[8px] float-left sm:hidden">
+                    <input type="text" class="w-[156.33px] h-full pl-[16px] float-left rounded-l border-solid border-[1px] border-gray-300" placeholder="Hledat">
+
+                    <select name="cats" id="cats" class="w-[90px] h-full border-solid border-[1px] border-gray-300 ml-[-3px] bg-white text-center float-left text-xssm">
+                        <option value="0: Object">Všechny</option><option value="1: Object" disabled="">─</option><option value="2: Object">Auto-moto</option><option value="3: Object">Cestování</option><option value="4: Object">Děti</option><option value="5: Object">Dům a zahrada</option><option value="6: Object">Elektro</option><option value="7: Object">Erotika</option><option value="8: Object">Hudba a film</option><option value="9: Object">Knihy a časopisy</option><option value="10: Object">Kosmetika a parfémy</option><option value="11: Object">Lékárna a zdraví</option><option value="12: Object">Mobily a chytrá elektronika</option><option value="13: Object">Oblečení, obuv a doplňky</option><option value="14: Object">Počítače a hry</option><option value="15: Object">Podnikání a průmysl</option><option value="16: Object">Potraviny</option><option value="17: Object">Sběratelství</option><option value="18: Object">Sport a turistika</option><option value="19: Object">Starožitnosti a umění</option><option value="20: Object">Šperky a hodinky</option><option value="21: Object">Zábava</option><option value="22: Object" disabled="">─</option><option value="23: Object">Najít uživatele</option><option value="24: Object">Skončené</option>
+                    </select>
+
+
+                    <!-- search icon -->
+                    <button class="w-[55px] h-full float-left border-solid border-[1px] border-gray-300 ml-[0px] rounded-r pl-[11px]">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#fc5c05" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                                </svg>
+                    </button>
+                </div>
+                <!-- DESKTOP -->
+
+                <!-- first line-->
+                <div class="hidden sm:block w-full h-[76.3333px] float-left">
+                    <!--logo-->
+                    <div class="w-[155px] h-full pt-[15px] float-left">
+                        <svg-icon id="logo" class="logo">
+                            <div><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 154.4 43.4" style="enable-background:new 0 0 154.4 43.4;" xml:space="preserve" class="c-svg-icon icn icn-svg" width="100%" height="100%">
+                            <g>
+                                <g>
+                                    <path fill="#fc5c05" d="M82.4,25.1c0,0,11.7-11.2,13.2-12.5c1.5-1.3,1.5-2.4,0.6-2.4c-0.9,0-5.8,0-6.3,0c-0.6,0-1.4,0.5-1.4,0.5
+                                        L74.8,24.6c0,0,0-23.9,0-24.6c0-0.6-0.5-1.6-1.1-1.6c-0.6,0-3.5,0-4.7,0c-1.2,0-1.2,1.2-1.2,1.2s0,39.7,0,40.9
+                                        c0,1.2,0.4,1.7,1.2,1.7c0.8,0,4.6,0,5.3,0c0.7,0,0.6-0.6,0.6-0.6v-10l2.5-2.3l11.4,11.8c0,0,0.9,1.1,1.5,1.1c0.9,0,4.7,0,6.6,0
+                                        c1.9,0,0.9-1.3,0.9-1.3L82.4,25.1z M61,10.1c-1.1,0-4,0-4.5,0c-0.5,0-1.2,0.2-1.2,1.2c0,1,0,16.9,0,18.7s-1.8,6.6-7.8,6.6
+                                        c-5.9,0-7.2-4.4-7.2-6.4c0-2.1,0-18.2,0-18.8c0-0.6-0.3-1.3-0.8-1.3c-0.6,0-5.2,0-5.7,0C33.4,10.1,33,11,33,11s0,16.6,0,19.1
+                                        c0,2.6,2,13.1,14.5,13.1c12.5,0,15.1-10.4,15.1-13.2c0-2.8,0-17.5,0-18.4C62.7,10.6,62.1,10.1,61,10.1z M21.3,10.1
+                                        c-7.1-3.3-16.7,2.2-16.7,2.2v5.7c0,0,0.7,0.6,1.7-0.3c1-0.9,4.1-2.7,8.4-2.7s6.1,1.3,6.7,3.4c0.6,2.1,0.3,2.9,0.3,2.9s-4,0-8.6,0
+                                        c-4.7,0-13,2.2-13,10.9c0,8.7,8,10,10.8,10c2.8,0,16.2,0,16.4,0c0.2,0,1.2,0.2,1.2-1.4c0-1.6,0-14.6,0-18.7
+                                        C28.5,18,28.4,13.5,21.3,10.1z M21.7,36.5c0,0-6.6,0-9.7,0S7.1,33.8,7.1,32c0-1.8,1.4-5.3,6-5.3s8.6,0,8.6,0V36.5z M137.6,9
+                                        c-9.3,0-16.8,7.7-16.8,17.2c0,9.5,7.5,17.2,16.8,17.2c9.3,0,16.8-7.7,16.8-17.2C154.4,16.7,146.9,9,137.6,9z M137.6,37.1
+                                        c-5,0-9-4.9-9-10.9c0-6,4-10.9,9-10.9c5,0,9,4.9,9,10.9C146.6,32.2,142.6,37.1,137.6,37.1z M114.6,9.1c-4.1,0.1-7.7,2.4-10.1,5.1
+                                        c-2.4,2.7-3,6.2-3,8.9s0.1,17.8,0.1,17.8s-0.3,1.4,0.9,1.4c1.2,0,4.3,0,5.2,0c0.9,0,0.9-0.7,0.9-1.5c0-0.8,0-16.3,0-19.5
+                                        c0-3.2,2.9-6.1,7.4-6.1c1.4,0,3.6,1.1,3.6,0.3c0-1,0-4.4,0-5.1C119.7,9.6,118.7,9,114.6,9.1z"></path>
+                                </g>
+                            </g>
+                            </svg></div>
+                            <!---->
+                            <!---->
+                            <!---->
+                        </svg-icon>
+                    </div>
+
+                    <!-- search bar -->
+                    <input type="text" placeholder="Hledat na Aukru" class="w-[507.8px] h-[47px] py-[14px] pl-[16px] pr-[40px] my-[14px] ml-[20px] bg-white float-left rounded-l border-solid border-[1px] border-gray-300">
+
+                    <!-- cats -->
+                    <select name="cats" id="cats" class="w-[199.27px] h-[47px] pt-[12px] pb-[10px] my-[14px] border-solid border-[1px] border-gray-300  bg-white text-center float-left text-[.8125rem] ml-[-3px]">
+                        <option value="0: Object">Všechny kategorie</option><option value="1: Object" disabled="">─</option><option value="2: Object">Auto-moto</option><option value="3: Object">Cestování</option><option value="4: Object">Děti</option><option value="5: Object">Dům a zahrada</option><option value="6: Object">Elektro</option><option value="7: Object">Erotika</option><option value="8: Object">Hudba a film</option><option value="9: Object">Knihy a časopisy</option><option value="10: Object">Kosmetika a parfémy</option><option value="11: Object">Lékárna a zdraví</option><option value="12: Object">Mobily a chytrá elektronika</option><option value="13: Object">Oblečení, obuv a doplňky</option><option value="14: Object">Počítače a hry</option><option value="15: Object">Podnikání a průmysl</option><option value="16: Object">Potraviny</option><option value="17: Object">Sběratelství</option><option value="18: Object">Sport a turistika</option><option value="19: Object">Starožitnosti a umění</option><option value="20: Object">Šperky a hodinky</option><option value="21: Object">Zábava</option><option value="22: Object" disabled="">─</option><option value="23: Object">Najít uživatele</option><option value="24: Object">Skončené</option>
+                    </select>
+
+                    <!-- search icon -->
+                    <div class="w-[55px] h-[47px] pt-[11px] pb-[14px] my-[14px] pl-[17px] mr-[20px] bg-white float-left border-solid border-[1px] border-gray-300 ml-[-3px] rounded-r">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#fc5c05" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                            </svg>
+                    </div>
+
+                    <!-- icon account -->
+                    <div class="w-[32px] h-[32px] mt-[20px] mb-[16px] ml-[10px] float-left">
+                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                            <path fill="#757575" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                        </svg>
+                    </div>
+
+                    <!-- description -->
+                    <div class="w-[75.1667px] h-[50px] ml-[8px] mt-[15px] mr-[18px] bg-white float-left">
+                        <p class="leading-none text-minitiny mt-[7px] font-bold">Moje Aukro</p>
+                        <p class="text-xs leading-none mt-[3px]">Přihlásit</p>
+                    </div>
+                    <!-- cart icon -->
+                    <div class="w-[44px] h-[64px] px-[10px] py-[14px] pt-[18px] float-left  mt-[8px]">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#757575" d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
+                        </svg>
+                    </div>
+
+                    <!-- sell btn -->
+
+                    <button class="w-[104.2px] h-[46px] px-[16px] my-[14px] float-left bg-[#fc5c05] rounded text-sm font-bold text-white">
+                        <a href="https://aukro.cz/vystavit/">
+                            <div class="w-[21.76px] h-[21.76px] float-left">
+                                <svg class="svg-inline--fa fa-coins fa-w-16 biggest" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="coins" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"></path></svg>
+                            </div>
+                            Prodat
+                        </a>
+                    </button>
+
+                </div>
+                <!-- second line -->
+                <div class="hidden sm:block w-full h-[40.6667px] float-left">
+
+                    <!-- btn 1-->
+
+                    <div class="w-[288px] h-full px-[12px] float-left bg-[#eeeeee] border-solid border-2 border-[#eeeeee]-300">
+
+                        <div class="w-[20px] h-[20px] float-left  mt-[9px]">
+                            <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M7,5H21V7H7V5M7,13V11H21V13H7M4,4.5A1.5,1.5 0 0,1 5.5,6A1.5,1.5 0 0,1 4,7.5A1.5,1.5 0 0,1 2.5,6A1.5,1.5 0 0,1 4,4.5M4,10.5A1.5,1.5 0 0,1 5.5,12A1.5,1.5 0 0,1 4,13.5A1.5,1.5 0 0,1 2.5,12A1.5,1.5 0 0,1 4,10.5M7,19V17H21V19H7M4,16.5A1.5,1.5 0 0,1 5.5,18A1.5,1.5 0 0,1 4,19.5A1.5,1.5 0 0,1 2.5,18A1.5,1.5 0 0,1 4,16.5Z" />
+                            </svg>
+
+                        </div>
+                        <span class="float-left mt-[8px] ml-[15px] text-tiny font-semibold">Vyberte si kategorii</span>
+                    </div>
+
+                    <!-- btn 2-->
+                    <a href="https://aukro.cz/zhave-aukce">
+                        <div class="w-[146.8px] h-full pl-[32px] float-left bg-[#eeeeee] border-solid border-2 border-[#eeeeee]-300 ml-[-3px]">
+                            <span class="float-left mt-[8px] text-center text-tiny font-semibold hover:text-[#fc5c05] cursor-pointer">Žhavé aukce</span>
+                        </div>
+                    </a>
+
+                    <!-- btn 3-->
+                    <a href="https://aukro.cz/do-300-kc">
+                        <div class="w-[131.317px] h-full px-[12px] float-left bg-[#eeeeee] border-solid border-2 border-[#eeeeee]-300 ml-[-3px]">
+                            <span class="float-left mt-[8px] ml-[19px] text-center text-tiny font-semibold hover:text-[#fc5c05] cursor-pointer">Do 300 Kč</span>
+                        </div>
+                    </a>
+
+                    <!-- btn 4-->
+                    <a href="https://aukro.cz/specialni-od-1kc">
+                        <div class="w-[116.183px] h-full px-[12px] float-left bg-[#eeeeee] border-solid border-2 border-[#eeeeee]-300 ml-[-3px]">
+                            <span class="float-left mt-[8px] text-center text-tiny font-semibold ml-[17px] hover:text-[#fc5c05] cursor-pointer">Od 1 Kč</span>
+                        </div>
+                    </a>
+
+                    <!-- btn 5-->
+                    <a href="https://aukro.cz/specialni-koncici">
+                        <div class="w-[154.2px] h-full px-[12px] float-left bg-[#eeeeee] border-solid border-2 border-[#eeeeee]-300 ml-[-3px]">
+                            <span class="float-left mt-[8px] text-center text-tiny font-semibold ml-[16px] hover:text-[#fc5c05] cursor-pointer">Končící aukce</span>
+                        </div>
+                    </a>
+
+                    <!-- btn 6-->
+                    <a href="https://aukro.cz/zebricky">
+                        <div class="w-[176.29px] h-full px-[12px] float-left bg-[#eeeeee] border-solid border-2 border-[#eeeeee]-300 ml-[-3px]">
+                            <span class="float-left mt-[8px] text-center text-tiny font-semibold ml-[18px] hover:text-[#fc5c05] cursor-pointer">Nejlepší prodejci</span>
+                        </div>
+                    </a>
+
+                    <div class="w-[24px] h-[24px] float-right mt-[8.33335px] mb-[8.33335px]">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#757575" d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="w-full h-[7080px] sm:h-[4073px] float-left bg-[#f3f3f3]">
+            <!-- content center-->
+            <div class="w-[320px] h-full sm:w-[1280px] mx-auto ">
+
+                <!-- main block of content -->
+                <div class="w-[320px] h-[7021px] float-left sm:w-[1280px] sm:h-[3966px]">
+
+                    <!-- main title -->
+                    <h1 class="text-3xl text-center mt-[30px] text-[#fc5c05] mb-[34px] font-medium sm:text-5xl">Kolekce aukcí</h1>
+
+                    <!-- 1. subblock -->
+                    <div class="w-[304px] h-[630px] px-[24px] py-[24px] mx-auto mb-[24px] bg-white sm:w-[1244px] sm:px-[32px] sm:mx-[16px] sm:h-[393px] sm:mt-[24px]">
+                        <h2 class="font-bold text-xl mb-[16px] sm:text-lg">Prémiová série navazujících aukcí</h2>
+
+                        <!-- bullets block-->
+                        <div class="w-[226px] h-[394.333px] mx-auto leading-none mb-[24px] sm:w-[494px] sm:m-0 sm:px-[15px] sm:h-[305px] sm:mb-[24px] sm:float-left">
+                            <!-- bullet point -->
+                            <div class="mb-[17px]">
+                                <div class="w-[18px] h-[18px] inline-block">
+                                    <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                                    <path fill="#099c53" d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z" />
+                                </svg>
+                                </div>
+                                <!-- desc-->
+                                <span class=" text-[18px]">unikátní tematická kolekce atraktivních položek</span>
+                            </div>
+
+                            <!-- bullet point -->
+                            <div class="mb-[17px]">
+                                <div class="w-[18px] h-[18px] inline-block">
+                                    <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                                    <path fill="#099c53" d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z" />
+                                </svg>
+                                </div>
+                                <!-- desc-->
+                                <span class=" text-[18px]">prémiové, raritní i běžně nedostupné položky </span>
+                            </div>
+
+                            <!-- bullet point -->
+                            <div class="mb-[17px]">
+                                <div class="w-[18px] h-[18px] inline-block">
+                                    <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                                    <path fill="#099c53" d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z" />
+                                </svg>
+                                </div>
+                                <!-- desc-->
+                                <span class=" text-[18px]">každá položka pečlivě odborně posouzena</span>
+                            </div>
+
+                            <!-- bullet point -->
+                            <div class="mb-[17px]">
+                                <div class="w-[18px] h-[18px] inline-block">
+                                    <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                                    <path fill="#099c53" d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z" />
+                                </svg>
+                                </div>
+                                <!-- desc-->
+                                <span class="text-[18px]">aukce se spouštějí postupně jedna po druhé</span>
+                            </div>
+
+                            <!-- bullet point -->
+                            <div class="mb-[17px]">
+                                <div class="w-[18px] h-[18px] inline-block">
+                                    <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                                    <path fill="#099c53" d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z" />
+                                </svg>
+                                </div>
+                                <!-- desc-->
+                                <span class="text-[18px]">intenzivní zážitek v průběhu celé kolekce</span>
+                            </div>
+
+                            <!-- bullet point -->
+                            <div class="mb-[17px]">
+                                <div class="w-[18px] h-[18px] inline-block">
+                                    <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                                    <path fill="#099c53" d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z" />
+                                </svg>
+                                </div>
+                                <!-- desc-->
+                                <span class="text-[18px]">zaručená kvalita ověřených prodejců</span>
+                            </div>
+
+                            <!-- bullet point -->
+                            <div class="mb-[17px]">
+                                <div class="w-[18px] h-[18px] inline-block">
+                                    <svg style="width:18px;height:18px" viewBox="0 0 24 24">
+                                    <path fill="#099c53" d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z" />
+                                </svg>
+                                </div>
+                                <!-- desc-->
+                                <span class="text-[18px]">pouze schválení přihazující</span>
+                            </div>
+                        </div>
+
+                        <!-- image block-->
+                        <div class="w-[256px] h-[94px] float-left px-[15px] sm:w-[661px] sm:h-[272px] sm:px-[15px] sm:mt-[-45px]">
+                            <img src=" https://f.aukro.cz/static-images/sites/kolekce-aukci/titulka8.jpg " alt="ilustrační obrázek kolekce ">
+                        </div>
+                    </div>
+
+                    <!-- 2. subblock-->
+                    <div class="w-[304px] h-[629px] px-[24px] py-[24px] mx-auto mb-[24px] bg-white sm:w-[1244px] sm:px-[32px] sm:mx-[16px] sm:h-[304px] sm:my-[24px]">
+                        <h2 class="font-bold text-xl sm:text-lg sm:mx-[15px]">Nadcházející kolekce</h2>
+
+                        <!-- image block-->
+                        <a href="https://aukro.cz/kolekce/starozitne-i-novejsi-sperky-11-07-2022">
+                            <div class="w-[256px] h-[126.15px] px-[15px] float-left sm:w-[365px] sm:h-[204px] sm:px-0 sm:mx-[15px]">
+                                <img class="border-solid " src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID248_12sperky.jpg" alt="nadcházející kolekce >>">
+                            </div>
+                        </a>
+                        <!-- text block-->
+                        <div class="w-[256px] h-[405px] px-[15px] mt-[24px] float-left sm:w-[785px] sm:h-[216px] sm:mt-[-5px]">
+                            <p class="text-sm sm:text-tit">
+                                <a href="/kolekce/starozitne-i-novejsi-sperky-11-07-2022" class="text-secondary"><span class="font-bold text-left text-[#4a90e2] hover:underline hover:decoration-solid">Starožitné i novější šperky</span></a>
+                                <br> První červencový týden vám nabídneme s našimi prodejci výběr ze starších i novějších šperků. Jde rozhodně o předměty, které stojí za to vlastnit - ať už z estetických důvodů, nebo za účelem uložení peněz. Vyvolávací
+                                ceny některých položek jsou nastaveny od oblíbené koruny, takže o adrenalin při přihazování budete mít postaráno.
+                                <br>
+                                <br>
+                                <span class="font-bold">Žádosti o účast:</span> do 11. 7. 2022 18:00
+                                <br>
+                                <span class="font-bold">Start živé aukce:</span> 11. 7. 2022 ve 20:00
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- 3. subblock-->
+                    <div class="w-[304px] h-[466px] px-[24px] py-[24px] mx-auto mb-[24px] bg-white sm:w-[1244px] sm:px-[32px] sm:mx-[16px] sm:h-[377px] sm:my-[24px]">
+                        <h2 class="font-bold text-xl sm:text-lg ">Kalendář kolekcí</h2>
+                        <!-- item block-->
+                        <div class="w-[256px] h-[173px] px-[15px] mt-[24px] float-left sm:w-[395px] sm:h-[259px] sm:px-[15px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left sm:w-[364px] sm:h-[203.183px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID248_12sperky.jpg" alt="Kolekce aukci - Starožitné i novější šperky 11. 7. 2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                11.7.2022 <br>
+                                <a href="/kolekce/starozitne-i-novejsi-sperky-11-07-2022" class="text-secondary">
+                                    <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Starožitné i novější šperky</span>
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- item block-->
+                        <div class="w-[256px] h-[173px] px-[15px] mt-[24px] float-left sm:w-[395px] sm:h-[259px] sm:px-[15px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left sm:w-[364px] sm:h-[203.183px]">
+                                <img class="image-fluid" src="https://f.aukro.cz/static-images/sites/kolekce-aukci/modelarstvi-540x300.jpg" alt="Modelářství">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                <span class="italic">prázdniny 2022</span><br>
+                                <span class="font-bold">Modelářství</span>
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <!-- 4. subblock -->
+                    <div class="w-[304px] h-[2419px] px-[24px] py-[24px] mx-auto mb-[24px] bg-white sm:w-[1244px] sm:px-[32px] sm:mx-[16px] sm:h-[1540px] sm:my-[24px]">
+                        <h2 class="font-bold text-xl sm:text-lg sm:pl-[15px] sm:pr-[15px]">Jak to funguje?</h2>
+
+                        <!-- item 1-->
+                        <div class="w-[256px] px-[15px] float-left h-[298px] text-sm sm:text-tit sm:w-[590px] sm:h-[372px]  sm:mt-[24px]">
+                            <p>
+                                <span class="font-bold">Kolekce aukcí</span><br> Kolekce aukcí je série na sebe <b>navazujících aukcí</b>, které se spouštějí postupně jedna po druhé. Každá aukce typicky trvá jen několik málo minut, dokud přibývají příhozy.
+                                Čas na první příhoz 45 sekund, prodlužování o 20 sekund s každým příhozem.
+                                <br><br> Po skončení aukce ihned začíná aukce následující. A to až do konce celé kolekce.
+                            </p>
+                        </div>
+
+                        <!-- item 2-->
+                        <div class="w-[256px] px-[15px] mt-[32px] float-left h-[148px] sm:w-[590px] sm:h-[372px]  sm:mt-[24px]">
+                            <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID200_jak_to_funguje_1b.jpg" alt="Jak to funguje.">
+                        </div>
+
+                        <!-- item 3-->
+                        <div class="w-[256px] px-[15px] mt-[32px] float-left h-[808.5px]  text-sm sm:w-[590px] sm:h-[537px]  sm:text-tit">
+                            <p>
+                                <span class="font-bold">Pouze schválení uživatelé</span><br> Účast na přihazování v kolekci aukcí je před jejím startem podmíněno schválením žádosti o účast na dané kolekci aukcí. Na základě Aukrem schválené přihlášky se
+                                uživatelé mohou aukce aktivně zúčastnit. O schválení účasti lze žádat v období uvedeném u dané kolekce aukcí, obvykle je to 7 dní před jejím startem.
+                                <br><br> Důvodem procesu schvalování je zvýšení ochrany před nerealizací obchodů z vyhraných aukcí. Podmínkou schválení je zejména ověřený účet, hodnocení uživatele nad 95&nbsp;% a jeho celková spolehlivost. O schválení
+                                účasti lze jednoduše požádat před startem kolekce aukcí <b>pomocí tlačítka "Zažádat&nbsp;o&nbsp;účast"</b>.
+                                <br><br> V době spuštění žádostí jsou již k dispozici veškeré položky dané kolekce aukcí. Lze si je prohlédnout a připravit se, u kterých položek kolekce budete chtít aktivně přihazovat.
+                                <br><br> Schválení uživatelé mohou ihned začít <b>přihazovat ještě před startem živé aukce</b>. Tato možnost skončí 1 hodinu před startem živé aukce.
+                            </p>
+                        </div>
+
+                        <!-- item 4-->
+                        <div class="w-[256px] px-[15px] mt-[32px] float-left h-[168px] sm:w-[590px] sm:h-[537px] ">
+                            <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID200_jak_to_funguje_2.jpg" alt="Jak to funguje.">
+                        </div>
+
+                        <!-- item 5-->
+                        <div class="w-[256px] px-[15px] mt-[32px] float-left h-[404px] sm:w-[590px] sm:h-[310px] sm:text-tit">
+                            <p>
+                                <span class="font-bold">Postupné spouštění aukcí</span><br> Aukce v kolekci následují ihned po sobě bez zbytečného zdržení a prostojů. Zároveň je zaručeno, že se <b>časově nepřekrývají</b>.
+                                <br><br> U kolekcí aukcí tedy nehrozí, že byste nestíhli přihodit a něco propásli z důvodu časové kolize více aukcí, o které máte zájem. Aktivní je vždy jen jedna položka z kolekce a teprve po jejím skončení se spouští
+                                následující.
+                                <br><br> Ze stránky kolekce se na detail právě probíhající položky kolekce dostanete zeleným tlačítkem "Zobrazit živou aukci".
+                            </p>
+
+                        </div>
+
+                        <!-- item 6-->
+                        <div class="w-[256px] px-[15px] mt-[32px] float-left h-[126px] sm:w-[590px] sm:h-[310px]">
+                            <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID200_jak_to_funguje_3.jpg" alt="Jak to funguje.">
+                        </div>
+
+                        <!-- item 7-->
+                        <div class="w-[256px] px-[15px] mt-[32px] float-left h-[156px]  text-sm sm:w-[590px] sm:h-[105px] sm:text-tit">
+                            <p>
+                                <span class="font-bold">Atraktivní prémiový obsah</span><br> Kolekce aukcí jsou tematicky koncipované. Položkami v kolekci aukcí jsou <b>atraktivní a prémiové předměty</b> od prověřených prodejců. Zaručujeme kvalitu zboží
+                                i servisu ze strany prodejce.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 5. subblock -->
+                    <div class="w-[304px] h-[2354px] px-[24px] py-[24px] mx-auto mb-[24px] sm:px-[32px] sm:w-[1248px] sm:h-[920px] sm:py-[32px] bg-white">
+                        <h2 class="font-bold text-xl sm:text-lg">Archiv kolekcí</h2>
+
+
+                        <!-- item 1-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID246_11sklo.jpg" alt="Kolekce aukci - Autorské a umělecké sklo 29. 6. 2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                29.6.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Autorské a umělecké sklo</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 2-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID237_10pohlednice.jpg" alt="Aukce Historické pohlednice - Jeseníky, Slezsko, Severní Morava 20.6.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                20.6.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Historické pohlednice - Jeseníky, Slezsko, Severní Morava</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 3-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID236_9umeni.jpg" alt="Aukce výtvarné umění 7.6.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                7.6.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Výtvarné umění</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 4-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID233_8bankovky.jpg" alt="Aukce bankovek davidsevcik104 31.5.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                31.5.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Sběratelské bankovky davidsevcik104</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 5-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID233_7numismatika.jpg" alt="Prémiová aukce numismatiky 30.5.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                30.5.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Prémiová numistika</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 6-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID231_6kolekce_vachal.jpg" alt="Josef Váchal - Knihy a grafika 26.5.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                26.5.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Josef Váchal - Knihy a grafika</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 7-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID220_5mineraly_drahokamy.jpg" alt="Minerály, drahé kameny a zkameněliny">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                13.4.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Prémiová kolekce minerálů</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 8-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID215_4military.jpg" alt="Prémiová aukce militárie 31.3.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                31.3.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Militárie</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 9-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/banner-images/706-04db0714-0ee7-4b20-a747-56342e47820d" alt="Prémiová aukce filatelie 16.3.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                16.3.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Prémiová filatelie</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 10-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID200_2bankovky.jpg" alt="Prémiová aukce sběratelských bankovek 28.2.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                28.2.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Prémiové sběratelské bankovky</span>
+
+                            </p>
+                        </div>
+
+                        <!-- item 11-->
+                        <div class="w-[256px] min-h-[173px] px-[15px] mt-[24px] float-left sm:w-[296px] sm:h-[258.2px]">
+                            <!-- image -->
+                            <div class="w-[226px] h-[124px] float-left mb-[4px] sm:w-[266px] sm:h-[148.4px]">
+                                <img src="https://f.aukro.cz/static-images/sites/kolekce-aukci/ID200_1kolekce.jpg" alt="Prémiová numismatická aukce 16.2.2022">
+                            </div>
+                            <!-- text -->
+                            <p class="text-left text-sm sm:text-tit">
+                                16.2.2022<br>
+
+                                <span class="font-bold text-[#4a90e2] hover:underline hover:decoration-solid">Prémiová numistická aukce</span>
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[304px] h-[50px] px-[8px] mx-auto my-[24px] bg-[#fc5c05] rounded pt-[13.75px] sm:w-[172.117px] sm:px-[16px]">
+                        <p class="text-center text-sm text-white font-bold">Aktuální kolekce >></p>
+                    </div>
+                    <!-- 6. subblock -->
+                    <div class="w-[304px] h-[242px] px-[24px] py-[24px] mx-auto mb-[24px] bg-white sm:w-[1248px] sm:h-[167px] sm:px-[32px] sm:py-[32px]">
+                        <h2 class="font-bold text-xl text-center sm:text-lg">Máte unikátní věci či sbírku a chcete je prodat přes kolekci aukcí? </h2>
+                        <p class="text-center mt-[10px] text-sm sm:text-tit">
+                            Ozvěte se nám na <a target="_blank" href="mailto://obchod@aukro.cz"><span class="text-[#5a9ae4] hover:underline hover:decoration-solid">kolekce@aukro.cz</span></a>
+                            <br> Máte nějaký dotaz, připomínku? <a href="/kontakt" target="_blank"><span class="text-[#5a9ae4] hover:underline hover:decoration-solid">Napište nám.</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="w-full h-[300px] sm:h-[390px] float-left sm\:hidden">
+            <!-- footer menu -->
+            <div class="w-[320px] h-full sm:w-[1248px] mx-auto bg-white px-[8px] sm:h-[230px] ">
+                <!-- one menu dropdown -->
+                <div class="w-[304px] min-h-[160px] pt-[16px] float-left sm:w-full sm:h-full sm:p-0 sm:mt-[25px]">
+                    <div class="sm:w-[155px] sm:h-[198px] sm:float-left  sm:mr-[153px]">
+                        <div class="w-full h-[35px] pb-[20px]" id="about-btn">
+                            <p class="text-left font-bold">O Aukru</p>
+                        </div>
+                        <div class="w-full h-[184px]  text-tiny hidden sm:block" id="about-menu">
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Kdo jsme</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Charitativní aukce</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Pro média</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Volná místa</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Tech blog</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Ochrana osobních údajů</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sm:w-[155px] sm:h-[198px] sm:float-left sm:ml-[76.5px] sm:mr-[76.5px]">
+                        <div class="w-full h-[35px] pb-[20px]" id="buyers-btn">
+                            <p class="text-left font-bold">Pro kupující</p>
+                        </div>
+                        <div class="w-full h-[160px]  text-tiny hidden sm:block" id="buyers-menu">
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Vítejte na Aukru</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Oblíbená vyhledávání</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Bezpečné nakupování</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Doprava a Platba</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Ochrana kupujících</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="sm:w-[155px] sm:h-[198px] sm:float-left  sm:ml-[76.5px] sm:mr-[76.5px]">
+                        <div class="w-full h-[35px] pb-[20px]" id="sellers-btn">
+                            <p class="text-left font-bold">Pro prodejce</p>
+                        </div>
+                        <div class="w-full h-[119px]  text-tiny hidden sm:block" id="sellers-menu">
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Proč prodávat na Aukru?</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Tipy pro úspěšný prodej</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Manažer prodeje</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Ceník</p>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="sm:w-[155px] sm:h-[198px] sm:float-left sm:ml-[153px]">
+                        <div class="w-full h-[35px] pb-[20px]" id="care-btn">
+                            <p class="text-left font-bold">Zákaznická péče</p>
+                        </div>
+                        <div class="w-full h-[90px]  text-tiny hidden sm:block" id="care-menu">
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Novinky</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Nápověda</p>
+                            </a>
+                            <a href="">
+                                <p class="w-full h-[29px] pb-[8px] hover:underline hover:decoration-solid">Kontakt</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- social menu -->
+            <div class="w-[304px] h-[197px] py-[16px] px-[5px] bg-[#f5f5f5] sm:w-[1248px] sm:p-[16px] mx-auto sm:h-[84px] sm:mt-[20px]">
+                <!-- email -->
+                <a href="https://aukro.cz/kontakt" target="_blank">
+                    <div class="w-[52px] h-[52px] rounded-full float-left mx-[3.4px] bg-white sm:ml-[58px]">
+                        <svg viewBox="0 0 24 24" class="my-[14px] mx-auto w-[24px] h-[24px]">
+                        <path fill="#666666" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                    </svg>
+                    </div>
+                </a>
+                <div class="hidden sm:block w-[85.2px] h-[20px] text-sm float-left ml-[11px] mr-[92px] text-[#666666] mt-[15px]"><span>Napište nám</span></div>
+                <!-- twitter -->
+                <a href="https://twitter.com/Aukro" target="_blank">
+                    <div class="w-[52px] h-[52px] rounded-full float-left mx-[3.4px] bg-white">
+                        <svg class="my-[14px] mx-auto w-[24px] h-[24px]" viewBox="0 0 24 24">
+                        <path fill="#666666" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                    </svg>
+                    </div>
+                </a>
+                <!-- facebook-->
+                <a href="https://facebook.com/Aukrocz" target="_blank">
+                    <div class="w-[52px] h-[52px] rounded-full float-left mx-[3.4px] bg-white">
+                        <svg class="my-[14px] mx-auto w-[24px] h-[24px]" viewBox="0 0 24 24">
+                        <path fill="#666666" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                    </svg>
+                    </div>
+                </a>
+                <!-- youtube -->
+                <a href="https://www.youtube.com/user/aukrocz?cbrd=1" target="_blank">
+                    <div class="w-[52px] h-[52px] rounded-full float-left mx-[3.4px] bg-white">
+                        <svg class="my-[14px] mx-auto w-[24px] h-[24px]" viewBox="0 0 24 24">
+                        <path fill="#666666" d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" />
+                    </svg>
+                    </div>
+                </a>
+                <!-- instagram -->
+                <a href="https://www.instagram.com/aukrocz/" target="_blank">
+                    <div class="w-[52px] h-[52px] rounded-full float-left mx-[3.4px] bg-white">
+                        <svg class="my-[14px] mx-auto w-[24px] h-[24px]" viewBox="0 0 24 24">
+                        <path fill="#666666" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                    </svg>
+                    </div>
+                </a>
+
+                <!-- Block for OS -->
+                <div class="w-[270px] h-[38px] float-left ml-[5px] mt-[20px] sm:ml-[80px] sm:mt-[8px]">
+                    <!-- Google Play -->
+                    <a href="https://play.google.com/store/apps/details?id=cz.aukro.twa" target="_blank">
+                        <div class="w-[128px] pr-[1px] h-[38px] pt-[5px] pb-[7px] mr-[6px]  float-left bg-white rounded">
+                            <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] ml-[5px] float-left">
+                            <path fill="#666666" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                        </svg>
+                            <p class="text-xs leading-none w-[98px] float-left text-[#666666] hover:underline hover:decoration-solid">Stahujte na <br><span class="text-sm font-bold">Google Play</span></p>
+                        </div>
+                    </a>
+                    <!-- App Store -->
+                    <a href="https://apps.apple.com/cz/app/aukro-cz/id1529499348" target="_blank">
+                        <div class="w-[128px] pr-[1px] h-[38px] pt-[5px] pb-[7px] mr-[6px]  float-left bg-white rounded">
+                            <svg class="w-[24px] h-[24px] ml-[5px] float-left" viewBox="0 0 24 24">
+                            <path fill="#666666" d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+                        </svg>
+                            <p class="text-xs leading-none w-[98px] float-left text-[#666666] hover:underline hover:decoration-solid">Stahujte na <br><span class="text-sm font-bold">App Store</span></p>
+                        </div>
+                    </a>
+
+                </div>
+
+
+
+            </div>
+            <!-- copyright -->
+            <div class="w-[304px] h-[197px] py-[16px] px-[5px] sm:w-[1248px] sm:p-[16px] mx-auto sm:h-[84px] sm:mt-[20px] text-xs">
+                <div class="sm:hidden">
+                    <p>© 2003–2022 AUKRO s.r.o</p><br>
+                    <p>Užívání služeb Aukro znamená souhlas s <a href="https://obchodnipodminky.aukro.cz" target="_blank"><span class="underline decoration-solid">Obchodními podmínkami</span></a>.</p> <br>
+                    <a href="https://napoveda.aukro.cz/node/35" target="_blank"><span class="underline decoration-solid">Informace o cookies</span></a>
+                    <a href="#"><span class="underline decoration-solid">Správa preferencí cookies</span></a>
+                    <a href="/mapa-kategorii"><span class="underline decoration-solid">Mapa kategorií</span></a>
+                    <a href=""><span class="underline decoration-solid">Přepnout na plnou verzi</span></a>
+                </div>
+                <div class="hidden sm:block">
+                    <span>© 2003–2022 AUKRO s.r.o</span>
+                    <span class="sm:ml-[430px]">Užívání služeb Aukro znamená souhlas s <a href="https://obchodnipodminky.aukro.cz" target="_blank">Obchodními podmínkami</a>.</span>
+                    <span class="underline decoration-solid"><a href="https://napoveda.aukro.cz/node/35" target="_blank">Informace o cookies</a></span>
+                    <span class="underline decoration-solid"><a href="#">Správa preferencí cookies</a></span>
+                    <a href="/mapa-kategorii" href="/mapa-kategorii"><span class="underline decoration-solid">Mapa kategorií</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
